@@ -403,7 +403,7 @@ namespace Quiz_System_OOP
             DateTime startTime = DateTime.Now;
             List<string> answers = new List<string>();
             TimeSpan studentTime;
-            int i = 0;
+           int i = 0,lastQuestion = 0;
             var questions = quiz.GetQuestions();
             foreach (var question in questions)
             {
@@ -429,11 +429,13 @@ namespace Quiz_System_OOP
                     answers.Add(input);
                     break;
                 } while (true);
+                lastQuestion = i;
                 i++;
             }
             studentTime = DateTime.Now - startTime;
             if (studentTime > quiz.Duration)
             {
+                answers[lastQuestion] = "";
                 studentTime = quiz.Duration;
             }
             int score = StudentService.CalculateScore(quiz, answers);
