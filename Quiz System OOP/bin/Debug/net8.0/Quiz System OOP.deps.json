@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Quiz System OOP/1.0.0": {
+        "runtime": {
+          "Quiz System OOP.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Quiz System OOP/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
