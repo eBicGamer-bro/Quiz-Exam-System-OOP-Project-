@@ -403,7 +403,7 @@ namespace Quiz_System_OOP
             DateTime startTime = DateTime.Now;
             List<string> answers = new List<string>();
             TimeSpan studentTime;
-           int i = 0,lastQuestion = 0;
+            int i = 0,lastQuestion = 0;
             var questions = quiz.GetQuestions();
             foreach (var question in questions)
             {
